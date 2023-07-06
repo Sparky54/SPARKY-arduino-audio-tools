@@ -101,7 +101,7 @@ public:
   /// Provides the number of files (The max index is size()-1): WARNING this is very slow if you have a lot of files in many subdirectories
   long size() { return idx.size();}
 
-  long getFileSize() { return file.size(); }
+  size_t getFileSize() { return file.size(); }
 
 protected:
 #if defined(USE_SD_NO_NS) 
